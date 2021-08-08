@@ -1,0 +1,110 @@
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--dark-cyan);
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 50vw bottom 40vh, left 50vw top 48vh;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: #fff;
+  width: 32.6rem;
+  border-radius: 1.6rem;
+  overflow: hidden;
+  text-align: center;
+  -webkit-box-shadow: 0.5rem 0.5rem 0.5rem var(--very-dark-desaturated);
+          box-shadow: 0.5rem 0.5rem 0.5rem var(--very-dark-desaturated);
+}
+
+.card-header-img {
+  width: 100%;
+  display: block;
+}
+
+.card-body {
+  font-size: 1.5rem;
+}
+
+.card-body-img {
+  width: 200px;
+  height: 200px;
+  border: .5rem solid #fff;
+  border-radius: 50%;
+  margin-top: calc(-10rem - .5rem);
+  background-color: #fff;
+}
+
+.card-body-name {
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.card-body-text {
+  color: var(--dark-grayish-blue);
+  font-size: 1.3rem;
+  margin-top: 0;
+}
+
+.card-body span {
+  color: var(--dark-grayish-blue);
+  font-weight: 400;
+}
+
+.card-footer {
+  margin: 2rem 0 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 1.5rem;
+  border-top: 1px solid rgba(155, 155, 155, 0.2);
+}
+
+.card-footer-social h3 {
+  margin-top: 2.5rem;
+  margin-bottom: .3rem;
+  font-size: 1.6rem;
+}
+
+.card-footer-social p {
+  letter-spacing: 1px;
+  margin: 0;
+  color: var(--dark-gray);
+  font-size: 1rem;
+}
+/*# sourceMappingURL=styles.css.map */
